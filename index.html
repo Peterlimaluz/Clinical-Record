@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Histórico Ficha Cadastral</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
+				<div class="jumbotron">
+					<img src="images/logo.png" class="img-fluid img-logo mb-3" alt="">
+					<h1 class="display-4 text-white" style="font-weight: bold"><strong>Histórico de informações Médicas.</strong></h1>
+				  <hr class="my-4">
+				  <p class="text-white">Clique nas linhas abaixo para expandir as informações.</p>
+					<hr>
+					  <div class="form-group row">
+						<label for="cpf" class="col-sm-3 text-white col-form-label">Informe o Cpf do Paciente:</label>
+						<div class="col-sm-4">
+						  <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00">
+						</div>
+						<div class="col-sm-3">
+							<button class="btn btn-info"><i class="fas fa-search"></i> Pesquisar</button>
+						</div>
+					  </div>			  	
+				</div>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="offset-lg-1"></div>
+			<div class="col-lg-10">
+				<div class="accordion" id="pessoalT">
+					<div class="card">
+						<h2 class="mb-0">
+							<div class="card-header id-pessoal" id="d-pessoal">
+								<h2 class="md-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#pessoal" aria-expanded="true" aria-controls="pessoal" style="font-size: 18px; text-decoration: none, color: #000">
+										<b>Identificação Pessoal: João Roberto Tavares</b> <i class="fa fa-angle-right ml-2"></i>
+									</button>
+								</h2>							
+							</div>
+						</h2>								
+						<div id="pessoal" class="collapse show" aria-labelledby="d-pessoal" data-parent="#pessoalT">			  
+						  <div class="card-body">
+							  <div class="row">
+								  <div class="col-md-2">
+									  <small>Sexo</small>
+								  	  <input type="text" class="form-control form-control-sm" value="MASCULINO" disabled>
+								  </div>
+								  <div class="col-md-2">
+									  <small>Data Nascimento</small>
+								  	  <input type="date" class="form-control form-control-sm" value="NÃO" disabled>
+								  </div>
+								  <div class="col-md-2">
+									  <small>Está grávida?</small>
+								  	  <input type="text" class="form-control form-control-sm" value="NÃO" disabled>
+								  </div>
+								  <div class="col-md-1">
+									  <small>IMC?</small>
+								  	  <input type="number" class="form-control form-control-sm" value="00" disabled>
+								  </div>
+								  <div class="col-md-1">
+									  <small>Fumante?</small>
+								  	  <input type="text" class="form-control form-control-sm" value="SIM" disabled>
+								  </div>
+								  <div class="col-md-2">
+									  <small>Possuí Alergia?</small>
+								  	  <input type="text" class="form-control form-control-sm" value="NÃO" disabled>
+								  </div>
+								  <div class="col-md-2">
+									  <small>Quimeoterapia?(Sim/Não)</small>
+								  	  <input type="text" class="form-control form-control-sm" value="NÃO" disabled>
+								  </div>
+							  </div>
+								<blockquote class="blockquote text-center">
+								  <div style="padding-top: 3vh"><hr></div>
+								  <footer class="blockquote-footer" style="position: relative;
+    margin-top: -27px;"><i style="background: #fff">Sintomas</i></footer>
+								</blockquote>
+							  <div class="row" style="padding-left: 1rem">
+								  <div style="width: 18rem;">
+									  <table class="table table-bordered">
+										  <thead>
+											  <tr class="table-active">
+												  <th style="width: 15rem">Sintomas</th>
+											  	  <th>Valor</th>
+											  </tr>											  
+										  </thead>
+										  <tbody>
+											  <tr>
+												  <td style="width: 15rem">Febre Alta</td>
+											  	  <td>Não</td>
+											  </tr>
+											  <tr>
+												  <td style="width: 15rem">Falta de ar ou dificuldade para respirar</td>
+											  	  <td>Não</td>
+											  </tr>
+											  <tr>
+												  <td style="width: 15rem">Pele Azulada</td>
+											  	  <td>Não</td>
+											  </tr>
+										  </tbody>
+									  </table>
+								  </div>
+							  </div>
+							  <blockquote class="blockquote text-center">
+								  <div style="padding-top: 3vh"><hr></div>
+								  <footer class="blockquote-footer" style="position: relative;
+    margin-top: -27px;"><i style="background: #fff">Contágio</i></footer>
+								</blockquote>
+							  <div class="row" style="padding-left: 1rem">
+								  <div style="width: 30rem;">
+									  <table class="table table-bordered">
+										  <thead>
+											  <tr class="table-active">
+												  <th style="width: 12rem">Vírus</th>
+											  	  <th>Teve Contato</th>
+												  <th>Quando</th>
+											  </tr>											  
+										  </thead>
+										  <tbody>
+											  <tr>
+												  <td style="width: 15rem">Convid</td>
+											  	  <td>Não</td>
+												  <td>03/03/2020</td>
+											  </tr>
+										  </tbody>
+									  </table>
+								  </div>
+							  </div>
+						  </div>
+						</div>
+					</div>	
+				</div>
+				<br>
+			</div>
+			<div class="offset-lg-1"></div>
+		</div>		
+		<div class="row">
+			<div class="offset-lg-1"></div>			
+			<div class="col-lg-10">
+				<div class="accordion" id="accordionExample">
+				  <div class="card curso-mouse">
+					<div class="card-header id-pessoal" id="headingOne">
+					  <h2 class="mb-0 ">
+						<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						  <b>Aferiações</b>  <i class="fa fa-angle-right ml-2"></i>
+						</button>
+					  </h2>
+					</div>
+					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+					  <div class="card-body" style="height: 55vh; overflow: auto;">
+						<div class="row"> 
+							<div class="col-md-3 border-right">
+								<table class="table table-bordered table-striped">
+									<tr>
+										<a href="#teste"><td class="text-center btn btn-link" style="width: 100%">05/02/2020</td></a>
+									</tr>
+									<tr>
+										<a href="#teste"><td class="text-center btn btn-link" style="width: 100%">05/02/2020</td></a>
+									</tr>
+									<tr>
+										<a href="#teste"><td class="text-center btn btn-link" style="width: 100%">05/02/2020</td></a>
+									</tr>
+									<tr>
+										<a href="#teste"><td class="text-center btn btn-link" style="width: 100%">05/02/2020</td></a>
+									</tr>
+								</table>
+							</div>
+							<div class="col-md-6">
+								<div class="row mb-2">
+									<select class="form-control">
+										<option>Todas as Variáveis</option>
+									</select>
+								</div>
+								<div class="row">
+									<table class="table table-bordered table-striped" style="height: 45vh; overflow: auto;">
+										<thead>
+											<tr class="table-active">
+												<th>Variável</th>
+												<th>Valor</th>
+												<th>Hora</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Temperatura</td>
+												<td>Valor</td>
+												<td>08:00</td>
+											</tr>
+											<tr>
+												<td>Temperatura</td>
+												<td>Valor</td>
+												<td>08:00</td>
+											</tr>
+											<tr>
+												<td>Temperatura</td>
+												<td>Valor</td>
+												<td>08:00</td>
+											</tr>
+											<tr>
+												<td>Temperatura</td>
+												<td>Valor</td>
+												<td>08:00</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>								
+							</div>
+						</div>
+						 <hr>
+					  </div>
+					</div>
+				  </div>
+				  <div class="card curso-mouse">
+					<div class="card-header id-pessoal" id="headingTwo">
+					  <h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						  <b>Anamenese </b> <i class="fa fa-angle-right ml-2"></i>
+						</button>
+					  </h2>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+					  <div class="card-body">						
+						<div class="row">
+							<div class="col-md-3 border-right" style="height: 45vh; overflow: auto;">
+								<table class="table table-bordered table-striped" >
+									<tr>
+										<a href="#"><td class="text-center btn btn-link" style="width: 100%">05/02/2020</td></a>
+									</tr>
+									<tr>
+										<a href="#"><td class="text-center btn btn-link" style="width: 100%">05/02/2020</td></a>
+									</tr>
+									<tr>
+										<a href="#"><td class="text-center btn btn-link" style="width: 100%">05/02/2020</td></a>
+									</tr>
+									<tr>
+										<a href="#"><td class="text-center btn btn-link" style="width: 100%">05/02/2020</td></a>
+									</tr>
+								</table>
+							</div>
+							<div class="col-md-9">
+								<div class="col-md-6">
+									<div class="row">
+										<small>como classifica seu estado de saúde no momento?</small>
+										<input class="form-control">
+									</div>									
+								</div>
+									<blockquote class="blockquote text-center">
+										  <div style="padding-top: 3vh"><hr></div>
+										  <footer class="blockquote-footer" style="position: relative;
+			margin-top: -27px;"><i style="background: #fff">Doenças, preexistentes</i></footer>
+									</blockquote>
+								<div class="row">
+									<div class="col-md-3 mb-3">
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="1">
+										  <label class="custom-control-label" for="1">Hipertensão</label>
+										</div>
+									</div>
+									<div class="col-md-3 mb-3">
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="2">
+										  <label class="custom-control-label" for="2">Sinusite</label>
+										</div>
+									</div>
+									<div class="col-md-3 mb-3">
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="3">
+										  <label class="custom-control-label" for="3">Câncer</label>
+										</div>
+									</div>
+									<div class="col-md-3 mb-3">
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="4">
+										  <label class="custom-control-label" for="4">Lupus (Eritematoso Sistemico)</label>
+										</div>
+									</div>
+									<div class="col-md-3 mb-3">
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="5">
+										  <label class="custom-control-label" for="5">Diabetes</label>
+										</div>
+									</div>
+									<div class="col-md-3 mb-3">
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="6">
+										  <label class="custom-control-label" for="6">Enfisema Pulmonar(DPOC)</label>
+										</div>
+									</div>
+									<div class="col-md-3 mb-3">
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="7">
+										  <label class="custom-control-label" for="7">Psoriase</label>
+										</div>
+									</div>
+									<div class="col-md-3 mb-3">
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="8">
+										  <label class="custom-control-label" for="8">Dislipidemia(Niveis de colesterol e triglicérideos maior que o padronizado)</label>
+										</div>
+									</div>
+									<div class="col-md-3 mb-3">
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="9">
+										  <label class="custom-control-label" for="9">Bronquite</label>
+										</div>
+									</div>
+									<div class="col-md-3 mb-3">
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="10">
+										  <label class="custom-control-label" for="10">Derrame AVC</label>
+										</div>
+									</div>
+									<div class="col-md-3 mb-3">
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="11">
+										  <label class="custom-control-label" for="11">Insufiência Renal</label>
+										</div>
+									</div>
+									<div class="col-md-3 mb-3">
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="12">
+										  <label class="custom-control-label" for="12">Artrite Reumatoide</label>
+										</div>
+									</div>
+									<div class="col-md-3 mb-3">
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="13">
+										  <label class="custom-control-label" for="13">Asma</label>
+										</div>
+									</div>
+									<div class="col-md-3 mb-3">
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="14">
+										  <label class="custom-control-label" for="14">Arritmia Cardíaca</label>
+										</div>
+									</div>
+									<div class="col-md-3 mb-3">
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="15">
+										  <label class="custom-control-label" for="15">Renite</label>
+										</div>
+									</div>
+									<div class="col-md-3 mb-3">
+										<div class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="16">
+										  <label class="custom-control-label" for="16">Anemia</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+					  </div>
+					</div>
+				  </div>
+
+				</div>
+			</div>			
+			<div class="offset-lg-1"></div>			
+		</div>
+		<div class="clearfix"></div>
+		<footer class="footer mt-5">
+			<p>HealthYou - Todos os Direitos Reservados - <a href="https://healthyou.com.br/">HY</a></p>
+		</footer>
+	</div>	
+	
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

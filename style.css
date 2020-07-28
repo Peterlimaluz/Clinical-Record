@@ -1,0 +1,80 @@
+/* Scss Document */
+@font-face {
+    font-family: 'Omes Regular';
+    src: url('font/Omnes_GirlScouts-Regular.otf') /*Para os demais navegadores*/;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Omes Bold';
+    src: url('font/Omnes_GirlScouts-Bold.otf') /*Para os demais navegadores*/;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Omes Medium';
+    src: url('font/Omnes_GirlScouts-Medium.otf') /*Para os demais navegadores*/;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Omes Light';
+    src: url('font/Omnes_GirlScouts-Light.otf') /*Para os demais navegadores*/;
+    font-weight: lighter;
+}
+
+body{
+	font-family: 'Omes Regular', sans-serif;
+}
+
+ h6{
+	padding-top: 10px;
+}
+
+.jumbotron{
+	background-color: #5c4696;
+	margin-bottom: 0;
+    padding: 4rem 2rem 1rem;
+}
+.id-pessoal {
+    background: #d8d8d8;
+    height: 60px;
+}
+.img-logo{
+	width: 100px;
+	height: auto;
+	margin-top: -50px;
+}
+
+.lb-fix{
+	border: solid 1px #5c4696;
+}
+
+.lb-line{
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.footer{
+/*	position:absolute !important;*/
+    bottom:0;
+    width:100%;
+    text-align:center;
+}
+
+.w-100{
+	width: 100%;
+}
+
+.bk-custom{
+	background: #ede9fb;
+}
+
+.btn-link{
+	color: #000;
+	font-size: 18px;
+} 
+
+.curso-mouse{
+	cursor: pointer;
+}
